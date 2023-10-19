@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    background-color: white; 
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .header {
+    background-color: #0074b7; 
+    padding: 20px;
+    text-align: center;
+    color: orange; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+  .logo img {
+    max-width: 100px; 
+    max-height: 50px; 
+    margin-left: 10px;
+  }
+  
+ 
+  .header h1 {
+    margin: 0;
+  }
+  
+  
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dropdown {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dropdown-toggle {
+    background-color: orange; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: orangered; 
+  }
+  
+  
+  .form-container {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #0074b7; 
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  
+  .form-field {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; 
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  .form-button {
+    background-color: #0074b7; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  .form-button.cancel {
+    background-color: orange; 
+  }
+  
+  .form-button:hover {
+    background-color: #005891;
+  }
+  
+ 
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  
+  .form-container input,
+  .form-container select,
+  .form-container textarea {
+    color: #000; 
+  }
+  
+  .footer {
+    background-color: #0074b7;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  form .form-row label + label {
+    margin-left: 10px; 
+    border-top: 1px solid #ccc;
+  }
+
+  form input[type="text"] {
+    margin-right: 300px;
+  }
+  form input[type="email"] {
+    margin-right: 300px; 
+  }
+
+
+  form .form-field::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: 1px solid #ccc; 
+    margin-top: 10px; 
+  }
+
+  form select {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 200px;
+  }
+
+  form select[name="assign-to"] {
+    margin-left: 60%; 
+  }
+   
